@@ -6,17 +6,26 @@
 /*   By: namatias <namatias@42sp.org.br>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/21 20:05:07 by namatias          #+#    #+#             */
-/*   Updated: 2025/08/21 20:12:38 by namatias         ###   ########.fr       */
+/*   Updated: 2025/08/26 17:05:37 by namatias         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#define GET_NEXT_LINE_H
 #ifndef GET_NEXT_LINE_H
+# define GET_NEXT_LINE_H
 
-#include <unistd.h>
-#include <stdlib.h>
-#include <fcntl.h>
-#include <stdio.h>
+//Para usar o write
+# include <unistd.h>
+//Para usar funções com alocação de memoria como Malloc, Calloc e Free
+# include <stdlib.h>
+//Para definir constantes e declarar operações com File Descriptor como Open
+# include <fcntl.h>
+//Para funções de entrada e saida padrão. Como printf e scanf
+# include <stdio.h>
 
+# ifndef BUFFER_SIZE
+#  define BUFFER_SIZE 60
+# endif
+
+char	*get_next_line(int fd);
 
 #endif
