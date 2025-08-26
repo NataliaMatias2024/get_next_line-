@@ -1,5 +1,4 @@
 Oração do Programador
-
 Código nosso que estás em C
 Santificado seja vós, Console
 Venha a nós o vosso array[10]
