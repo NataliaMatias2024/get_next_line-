@@ -6,7 +6,7 @@
 /*   By: namatias <namatias@42sp.org.br>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/21 20:05:07 by namatias          #+#    #+#             */
-/*   Updated: 2025/08/27 16:35:02 by namatias         ###   ########.fr       */
+/*   Updated: 2025/08/27 16:51:25 by namatias         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@
 # include <stdio.h>
 
 # ifndef BUFFER_SIZE
-#  define BUFFER_SIZE 2
+#  define BUFFER_SIZE 1000
 # endif
 
 char	*get_next_line(int fd);
