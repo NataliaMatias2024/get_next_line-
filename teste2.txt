@@ -1,0 +1,14 @@
+Rascunho da Lógica da GNL
+
+1º Abrir arquivo usando open("text.txt", O_RDONLY) e atribuir a fd
+2º Retornar NULL caso fd seja invalido (fd < 0) ou BUFFER_SIZE <= 0
+3º Criar condicional, se for possivel ler fd iniciamos looping se nao for possivel retorna NULL
+4º Ao iniciar o looping reservamos espaço na memoria (malloc)
+5º Tratamento de erro do malloc
+6º Começa a ler e salva no espaço mallocado
+7º Esse malloc e a informação lido no tamanho do BUFFER_SIZE devem ser atualizados ATE encontrar \na
+8º Ao encontrar \n (independende BUFFER_SIZE) retornar a linha
+9º Tudo após o \n deve ser salvo em uma variável estática (deve ser lembrado prox chamada)
+10º looping se perepete ate achar a posição \0 (fim do texto)
++ ...
+
