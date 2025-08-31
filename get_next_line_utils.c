@@ -6,7 +6,7 @@
 /*   By: namatias <namatias@42sp.org.br>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/27 14:03:13 by namatias          #+#    #+#             */
-/*   Updated: 2025/08/30 09:59:08 by namatias         ###   ########.fr       */
+/*   Updated: 2025/08/31 16:51:50 by namatias         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -108,4 +108,20 @@ char	*ft_strjoin(char const *s1, char const *s2)
 			str[j++] = s2[i++];
 	str[j] = '\0';
 	return (str);
+}
+
+char	*ft_strchr(const char *s, int c)
+{
+	int	i;
+
+	i = 0;
+	while (1)
+	{
+		if (s[i] == (char)c)
+			return ((char *)&s[i]);
+		if (s[i] == '\0')
+			break ;
+		i++;
+	}
+	return (NULL);
 }
