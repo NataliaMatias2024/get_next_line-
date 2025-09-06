@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   get_next_line.h                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: namatias <namatias@42sp.org.br>            +#+  +:+       +#+        */
+/*   By: namatias <namatias@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/21 20:05:07 by namatias          #+#    #+#             */
-/*   Updated: 2025/08/31 16:49:26 by namatias         ###   ########.fr       */
+/*   Updated: 2025/09/05 22:01:21 by namatias         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef GET_NEXT_LINE_H
 # define GET_NEXT_LINE_H
- 
+
 //Para usar o write
 # include <unistd.h>
 //Para usar funções com alocação de memoria como Malloc, Calloc e Free
@@ -32,5 +32,5 @@ char	*ft_strdup(const char *s);
 char	*ft_substr(char const *s, unsigned int start, size_t len);
 char	*ft_strjoin(char const *s1, char const *s2);
 char	*ft_strchr(const char *s, int c);
-int		protect(char const *s1, char const *s2);
+
 #endif
