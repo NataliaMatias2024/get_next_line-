@@ -6,7 +6,7 @@
 /*   By: namatias <namatias@42sp.org.br>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/07 14:28:10 by namatias          #+#    #+#             */
-/*   Updated: 2025/09/07 15:13:51 by namatias         ###   ########.fr       */
+/*   Updated: 2025/09/07 16:16:06 by namatias         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,8 +22,8 @@
 #  define BUFFER_SIZE 1
 # endif
 
-# ifndef MAX_FDS
-#  define MAX_FDS 1024
+# ifndef MAX_FD
+#  define MAX_FD 1024
 # endif
 
 char	*get_next_line(int fd);
