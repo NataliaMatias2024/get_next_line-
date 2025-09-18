@@ -126,16 +126,20 @@ char	*get_next_line(int fd)
 	return (line);
 }
 
-// int	main()
-// {
-// 	int		fd;
-// 	char	*retorno;
-// 	//fd = open("teste1.txt", O_RDONLY);
-// 	fd = -1;
-// 	while ((retorno = get_next_line(fd)))
-// 	{
-// 		printf("%s", retorno);
-// 		free (retorno);
-// 	}
-// 	close(fd);
-// }
+//#include <fcntl.h>
+//#include <stdio.h>
+//int	main()
+//{
+//	int	fd;
+//	char *retorno;
+//	fd = open("teste2.txt", O_RDONLY);
+//	while ((retorno = get_next_line(fd)))
+//	{
+//		printf("%s", retorno);
+//		free (retorno);
+//	}
+//	retorno = get_next_line(fd);
+//	printf("%s", retorno);
+//	free (retorno);
+//	close (fd);
+//}

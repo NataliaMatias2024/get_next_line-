@@ -13,7 +13,7 @@
 #ifndef GET_NEXT_LINE_H
 # define GET_NEXT_LINE_H
 
-//Para usar o write
+//Para usar o read
 # include <unistd.h>
 //Para usar funções com alocação de memoria como Malloc, Calloc e Free
 # include <stdlib.h>
