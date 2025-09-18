@@ -21,7 +21,7 @@ Deve funcionar para qualquer tipo de arquivo legível.
 ## 🛠️ Compilação
 
 Compile usando um dos comandos abaixo:
-Para o obrigatorio: 
+
 ```c
 cc -Wall -Wextra -Werror -D BUFFER_SIZE=42 get_next_line.c get_next_line_utils.c -o gnl
 ```
@@ -30,3 +30,29 @@ Para o Bonus:
 cc -Wall -Wextra -Werror -D BUFFER_SIZE=42 get_next_line_bonus.c get_next_line_utils_bonus.c -o gnl_bonus
 ```
 Obs: Substitua 42 pelo valor de BUFFER_SIZE que desejar.
+
+## 💡 Sugestão de Teste
+
+Crie um arquivo main.c para testar a função:
+```c
+#include <fcntl.h>
+#include <stdio.h>
+#include "get_next_line.h"
+
+int main(void)
+{
+    int fd = open("arquivo.txt", O_RDONLY);
+    char *linha;
+
+    while ((linha = get_next_line(fd)) != NULL)
+    {
+        printf("%s", linha);
+        free(linha);
+    }
+    close(fd);
+    return 0;
+}
+```
+## ✅ Status
+
+✔️ Projeto finalizado e aprovado na 42 SP.
